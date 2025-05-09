@@ -1,0 +1,1 @@
+clang -Xpreprocessor -fopenmp -I$(brew --prefix libomp)/include -L$(brew --prefix libomp)/lib -lomp PIparalelo.c -o PIparalelo

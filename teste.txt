@@ -1,0 +1,14 @@
+11
+0 4 9 
+3 5 6 
+0 6 9 
+
+# Gantt Chart (Compressed: 1 char = 5 time units)
+Machine  0 |J0J2  |
+Machine  1 |J0J0  |
+Machine  2 |  J0J0|
+
+Time         0  5 10 11
+
+# Performance Analysis
+Average runtime over 10 repetitions: 0.000200 seconds

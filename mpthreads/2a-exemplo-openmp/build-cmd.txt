@@ -1,0 +1,3 @@
+
+gcc-10 -fopenmp hello_omp_v1.c -o hello_omp_v1
+

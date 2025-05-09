@@ -1,0 +1,3 @@
+#clang -Xpreprocessor -fopenmp -I$(brew --prefix libomp)/include -L$(brew --prefix libomp)/lib -lomp paralelOMP.c -o paralelOMP
+
+#./paralelOMP

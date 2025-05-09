@@ -1,0 +1,1 @@
+Average runtime over 10 repetitions: 0.000068 seconds
