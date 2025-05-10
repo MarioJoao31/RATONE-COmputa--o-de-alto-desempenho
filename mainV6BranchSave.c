@@ -1,6 +1,10 @@
 /*
     Job-Shop Scheduler in C using Parallel Branch and Bound with Backtracking
     This version guarantees optimality for small problem instances.
+        
+    gcc -fopenmp -Wall -g -o main.exe mainV6BranchSave.c
+
+    .\main.exe ft06.jss teste2.txt 4 1
 
     Constraints:
     - No pointers or dynamic memory
