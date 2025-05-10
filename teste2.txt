@@ -1,0 +1,20 @@
+96
+0 1 4 10 17 20 
+10 18 26 36 46 56 
+23 60 64 72 81 83 
+18 56 61 66 69 87 
+66 75 78 83 91 94 
+23 69 72 81 91 95 
+
+# Gantt Chart (1 char = 5 time units)
+Machine  0 |J0                J1J1J1J3  J2J2J2J5J4  |
+Machine  1 |J0J0J1J1J3J5                  J4J2      |
+Machine  2 |J0    J1J1J2            J3J3J4        J5|
+Machine  3 |    J0J0              J1J2J3J5      J4  |
+Machine  4 |        J0J0J1J1          J3J3J3J2J2J5  |
+Machine  5 |      J0      J1J1J1    J2J2J2J5J4J3J3J3|
+
+Time         0  5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 96
+
+# Performance Analysis
+Average runtime over 1 repetitions: 599.653000 seconds

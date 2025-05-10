@@ -1,0 +1,9 @@
+# INTERRUPTED EXECUTION
+Best makespan: 96
+Total time: 599.65 sec
+0 0 0 0 0 0 
+0 0 0 0 0 0 
+0 0 0 0 0 0 
+0 0 0 0 0 0 
+0 0 0 0 0 0 
+0 0 0 0 0 0 
