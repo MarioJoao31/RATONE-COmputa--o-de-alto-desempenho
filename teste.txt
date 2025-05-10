@@ -1,14 +1,8 @@
-11
-0 4 9 
-3 5 6 
-0 6 9 
-
-# Gantt Chart (Compressed: 1 char = 5 time units)
-Machine  0 |J0J2  |
-Machine  1 |J0J0  |
-Machine  2 |  J0J0|
-
-Time         0  5 10 11
-
-# Performance Analysis
-Average runtime over 10 repetitions: 0.000200 seconds
+[Thread 0] Step 76953000: Depth=32, Job=5, Op=3, Start=93, End=103, Current=113, Best=97
+[Thread 2] Step 76954000: Depth=33, Job=4, Op=4, Start=103, End=106, Current=113, Best=97
+[Thread 3] Step 76955000: Depth=34, Job=5, Op=5, Start=106, End=107, Current=106, Best=97
+[Thread 3] Step 76957000: Depth=31, Job=5, Op=4, Start=99, End=103, Current=99, Best=97
+[Thread 0] Step 76956000: Depth=33, Job=5, Op=4, Start=106, End=110, Current=106, Best=97
+[Thread 1] Step 76958000: Depth=34, Job=5, Op=4, Start=92, End=96, Current=96, Best=97
+[Thread 3] Step 76958000: Depth=31, Job=3, Op=4, Start=94, End=102, Current=95, Best=97
+[Thread 2] Step 76958000: Depth=31, Job=5, Op=5, Start=111, End=112, Current=111, Best=97
