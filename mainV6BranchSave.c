@@ -4,7 +4,7 @@
         
     gcc -fopenmp -Wall -g -o main.exe mainV6BranchSave.c
 
-    .\main.exe ft06.jss teste2.txt 4 1
+    .\main.exe ft06.jss teste2.txt 4 1 > log.txt
 
     Constraints:
     - No pointers or dynamic memory
@@ -89,7 +89,7 @@ void branch_and_bound(int scheduled_ops, int current_makespan,
                       int job_ready[MAX_JOBS],
                       int machine_ready[MAX_MACHINES],
                       Operation current_schedule[MAX_JOBS][MAX_OPS]) {
-    static long long step_count = 0;
+    static unsigned long long step_count = 0;
     if (interrupted) return;
 
     if (scheduled_ops == num_jobs * num_ops) {
@@ -137,9 +137,9 @@ void branch_and_bound(int scheduled_ops, int current_makespan,
 
         #pragma omp atomic
         step_count++;
-        if (step_count % 1000000 == 0) {
+        if (step_count % 100000000 == 0) {
             double elapsed = omp_get_wtime() - program_start_time;
-            printf("[Thread %d] Iteration %lld | Current=%d | Best=%d | Elapsed=%.2fs\n",
+            printf("[Thread %d] Iteration %llu | Current=%d | Best=%d | Elapsed=%.2fs\n",
                    omp_get_thread_num(), step_count, current_makespan, current_best_live, elapsed);
             fflush(stdout);
         }
@@ -259,6 +259,10 @@ int main(int argc, char *argv[]) {
     }
 
     double avg_time = measure_execution(threads, repeats);
-    write_output(argv[2], avg_time, repeats);
+    write_output(argv[2], avg_time, repeats, argv[1]);
     return EXIT_SUCCESS;
 }
+
+
+// TODO: fazer o paralelo, fazer a arvore full, cada node usa uma thread.
+// 
