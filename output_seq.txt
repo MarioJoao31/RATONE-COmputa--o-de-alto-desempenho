@@ -1,0 +1,12 @@
+# Solução Job-Shop: ft03.jss
+Melhor makespan: 11
+0 4 9 
+3 5 6 
+0 6 9 
+
+# Gantt Chart
+Máquina  0 |J0J2  |
+Máquina  1 |J0J0  |
+Máquina  2 |  J0J0|
+
+# Performance: Média de 0.007165 s em 1 repetições

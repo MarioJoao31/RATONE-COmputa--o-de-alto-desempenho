@@ -4,6 +4,8 @@
         
     gcc -fopenmp -Wall -g -o main.exe mainV6BranchSave.c
 
+    clang -Xpreprocessor -fopenmp -I$(brew --prefix libomp)/include -L$(brew --prefix libomp)/lib -lomp mainV6BranchSave.c
+
     .\main.exe ft06.jss teste2.txt 4 1 > log.txt
 
     Constraints:

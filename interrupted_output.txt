@@ -1,9 +1,9 @@
 # INTERRUPTED EXECUTION
-Best makespan: 97
-Total time: 246.38 sec
-0 0 0 0 0 0 
-0 0 0 0 0 0 
-0 0 0 0 0 0 
-0 0 0 0 0 0 
-0 0 0 0 0 0 
-0 0 0 0 0 0 
+Best makespan: 111
+Total time: 67.50 sec
+0 1 4 10 17 20 
+10 18 26 36 46 56 
+23 60 64 72 81 82 
+18 81 86 91 94 102 
+28 37 40 72 86 94 
+40 64 76 89 102 106 
